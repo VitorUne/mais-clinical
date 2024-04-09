@@ -20,6 +20,8 @@ import {AddEditPacienteComponent} from "./paciente/add-edit-paciente/add-edit-pa
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatSelectModule} from "@angular/material/select";
 import {DataFormatPipe} from "../services/utils/data-format.pipe";
+import {MedicoComponent} from "./medico/medico.component";
+import {AddEditMedicoComponent } from './medico/add-edit-medico/add-edit-medico.component';
 
 @NgModule({
   imports: [
@@ -51,7 +53,9 @@ import {DataFormatPipe} from "../services/utils/data-format.pipe";
     MatTooltipModule,
     AddEditUsuarioComponent,
     MatDividerModule,
-    PacienteComponent
+    PacienteComponent,
+    AddEditMedicoComponent,
+    MedicoComponent,
   ],
   declarations: [
     SidenavComponent,
@@ -61,7 +65,9 @@ import {DataFormatPipe} from "../services/utils/data-format.pipe";
     AlterarSenhaComponent,
     ConfirmDialogComponent,
     PacienteComponent,
-    AddEditPacienteComponent
+    AddEditPacienteComponent,
+    AddEditMedicoComponent,
+    MedicoComponent, // Add MedicoComponent to the declarations array
   ],
   bootstrap: [
     SidenavComponent,
