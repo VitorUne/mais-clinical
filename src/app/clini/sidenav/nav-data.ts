@@ -20,7 +20,7 @@ export const navData: SideNavInterface[] = [
   },
   {
   icon: 'medical_services',
-  name: 'Medico',
+  name: 'Médicos',
   position: 4,
   viewOnlyRoot: true
 }
