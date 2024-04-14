@@ -66,8 +66,8 @@ import {AddEditMedicoComponent } from './medico/add-edit-medico/add-edit-medico.
     ConfirmDialogComponent,
     PacienteComponent,
     AddEditPacienteComponent,
-    AddEditMedicoComponent,
-    MedicoComponent, // Add MedicoComponent to the declarations array
+    MedicoComponent,
+    AddEditMedicoComponent, 
   ],
   bootstrap: [
     SidenavComponent,

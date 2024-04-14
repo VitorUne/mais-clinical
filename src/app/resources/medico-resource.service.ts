@@ -7,7 +7,7 @@ import {Observable, of} from "rxjs";
 })
 export class medicoResourceService {
 
-  commonUrl = 'https://x8ki-letl-twmt.n7.xano.io/api:WwQP6b4e/medico';
+  commonUrl = 'https://x8ki-letl-twmt.n7.xano.io/api:WwQP6b4e/medico/medico';
 
 
   constructor(private http: HttpClient) { }
