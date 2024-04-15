@@ -4,19 +4,19 @@ import {UsuarioResourceService} from "../../resources/usuario-resource.service";
 import {AuthService} from "../../services/auth/auth.service";
 import {ToastrService} from "ngx-toastr";
 import {MatDialog} from "@angular/material/dialog";
+import {medicoResourceService } from 'src/app/resources/medico-resource.service';
 import {MatTableDataSource} from "@angular/material/table";
 import {AddEditUsuarioComponent} from "../usuario/add-edit-usuario/add-edit-usuario.component";
 import {ConfirmDialogComponent} from "../../component/dialogs/confirm/confirm-dialog.component";
 import {AddEditMedicoComponent} from "./add-edit-medico/add-edit-medico.component";
 import {first} from "rxjs";
-import {medicoResourceService } from 'src/app/resources/medico-resource.service';
+
 
 @Component({
   selector: 'app-medico',
   templateUrl: './medico.component.html',
   styleUrls: ['./medico.component.scss']
 })
-
 export class MedicoComponent {
 
   result: any[] = [];
@@ -122,17 +122,17 @@ export class MedicoComponent {
     if (model.id) {
       this.resource.delete(model.id).pipe(first()).subscribe(res => {
         if (res) {
-          this.toastr.success('Paciente deletado com sucesso', 'Sucesso!');
+          this.toastr.success('Médico deletado com sucesso', 'Sucesso!');
           // Execute qualquer outra lógica necessária após a exclusão do paciente
         }
       }, error => {
         // Exibe o erro no console
         console.log(error);
         // Trate o erro conforme necessário, como exibir uma mensagem de erro para o usuário
-        this.toastr.error('Erro ao deletar paciente', 'Erro!');
+        this.toastr.error('Erro ao deletar Médico', 'Erro!');
       });
     } else {
-      console.error('O ID do paciente não está definido ou é inválido.');
+      console.error('O ID do Médico não está definido ou é inválido.');
       // Trate esse caso conforme necessário, como exibindo uma mensagem de erro para o usuário.
     }
   }
